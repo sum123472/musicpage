@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"text="text/css"href="style.css">
+</head>
+<body>
+    <h1><i class="fa fa-music" aria-hidden="true"></i>My Music Player</h1>
+    <header>
+        <div class=" a song">a</div>
+        <div class=" b song">b</div>
+        <div class=" c song">c</div>
+        <div class=" d song">d</div>
+        <div class=" e song">e</div>
+        <div class=" f song">f</div>
+        <div class=" g song">g</div>
+        <div class=" h song">h</div>
+        <div class=" i song">i</div>
+    </header>
+
+
+
+<script>
+    var  divlength=document.querySelectorAll('.song').length;
+    console.log(divlength);
+
+    for(var i=0;i<divlength;i++)
+    {
+        var demo=document.querySelectorAll('.song')[i].addEventListener('click',playsong);
+        var demo=document.querySelectorAll('.song')[i].addEventListener('dblclick',pausesong);
+    }
+    var song1=new Audio();
+    song1.src="playlist/Tum Hi Aana - Marjaavaan.mp3";
+    var song2=new Audio();
+    song2.src="playlist/01 - Tum Hi Ho - PagalSongs.com.mp3";
+    var song3=new Audio();
+    song3.src="playlist/Hasi.mp3";
+    var song4=new Audio();
+    song4.src="playlist/Bekhayali-(Mr-Jatt.com).mp3";
+    var song5=new Audio();
+    song5.src="playlist/Kuch Toh Hai 128 Kbps.mp3";
+    var song6=new Audio();
+    song6.src="playlist/Khairiyat Happy - Chhichhore.mp3";
+    var song7=new Audio();
+    song7.src="playlist/Pachtaoge - Arijit Singh.mp3";
+    var song8=new Audio();
+    song8.src="playlist/Kaun_Tujhe_320_Kbps.mp3";
+    var song9=new Audio();
+    song9.src="playlist/Hum_Naa_Rahein_Hum_(Remix)_(Bestwap.in).mp3";
+    function playsong(){
+        var songId=this.innerHTML;
+        console.log(songId);
+        switch(songId){
+            case "a":song1.play();
+                      break;
+            case "b":song2.play();
+                     break;
+                    
+            case "c":song3.play();
+                     break;
+            case "d":song4.play();
+                     break;
+            case "e":song5.play();
+                     break;
+            case "f":song6.play();
+                     break;
+            case "g":song7.play();
+                     break;
+            case "h":song8.play();
+                     break;
+            case "i":song9.play();
+                     break;
+            default:console.log("wrong input");
+                     break;
+        }
+        
+
+        }
+        function pausesong(){
+            var songId=this.innerHTML;
+            console.log(songId);
+        switch(songId){
+            case "a":song1.pause();
+                      break;
+            case "b":song2.pause();
+                     break;
+                    
+            case "c":song3.pause();
+                     break;
+            case "d":song4.pause();
+                     break;
+            case "e":song5.pause();
+                     break;
+            case "f":song6.pause();
+                     break;
+            case "g":song7.pause();
+                     break;
+            case "h":song8.pause();
+                     break;
+            case "i":song9.pause();
+                     break;
+            default:console.log("wrong input");
+                     break;
+        }
+        
+
+        }
+
+        
+    
+       
+</script>
+</body>
+</html>

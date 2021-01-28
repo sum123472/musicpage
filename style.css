@@ -1,0 +1,82 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+h1{
+    text-align:center;
+    font-size:1.8rem;
+    padding: 30px 0;
+    color:black;;
+}
+header{
+    height:550px;
+    width:90%;
+    margin:auto;
+    border:1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+div{
+    height:160px;
+    width:30%;
+    border:1px solid black;
+    cursor: pointer;
+
+}
+.a{
+    background-image: url('images/m1.jpg');
+    background-repeat: no repeat;
+    background-size: 100%100%;
+
+}
+.b{
+    background-image: url('images/m2.jpg');
+    background-repeat: no repeat;
+    background-size: 100%100%;
+
+}
+.c{
+    background-image: url('images/m3.jpg');
+    background-repeat: no repeat;
+    background-size: 100%100%;
+
+}
+.d{
+    background-image: url('images/m4.jpg');
+    background-repeat: no repeat;
+    background-size: 100%100%;
+
+}
+.e{
+    background-image: url('images/m5.jpg');
+    background-repeat: no repeat;
+    background-size: 100%100%;
+
+}
+.f{
+    background-image: url('images/m6.jpg');
+    background-repeat: no repeat;
+    background-size: 100%100%;
+
+}
+.g{
+    background-image: url('images/m7.jpg');
+    background-repeat: no repeat;
+    background-size: 100%100%;
+
+}
+.h{
+    background-image: url('images/m8.jpg');
+    background-repeat: no repeat;
+    background-size: 100%100%;
+
+}
+.i{
+    background-image: url('images/m9.jpg');
+    background-repeat: no repeat;
+    background-size: 100%100%;
+
+}
